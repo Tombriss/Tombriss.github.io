@@ -31,6 +31,10 @@ Il est important de noter que cette veille technologique s'intéresse aux récen
 
 Lorsqu'on possède un handicap visuel, on est confronté à plusieurs problèmatiques au quotidien : avoir accès à l'informations sur son environnement, être autonome dans ses déplacements, trouver du contenu sur internet, pouvoir le lire, intéragir avec son smartphone etc. Les domaines de l'intelligence artificielle qui offrent de l'espoir sur ces défis sont principalement la reconnaissance vocale (Speech Recognition), la vision par ordinateur (Computer Vision) et enfin, dans une moindre mesure, la compréhension du langage naturel (Natural Language Processing). 
 
+## Speech Recognition
+
+En 
+
 
 [1] https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle
 [2] https://en.wikipedia.org/wiki/Artificial_intelligence
