@@ -1,21 +1,16 @@
-# L'Intelligence Artificielle au service des déficients visuels
-
-
-## Thomas Brisson - 2020/2021
 
 ### MOS 4.4 : Nouvelles Technologies de l'Information et de la communication
+### Thomas Brisson - 2020/2021
+
+# Introduction
+
+En France, près de 1,7 million de personnes sont atteintes d’un trouble de la vision. [https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle]
 
 
-## Introduction
+# Etat de l'art de l'Intelligence Artificielle
 
 
-L'objectif de cette veille technologique est de déconstruire les idées reçues sur l'intelligence artificielle, en explicant toutes les notions auxquelles elle est rattachée. Nous pourrons la redéfinir dans le contexte actuel, et comprendre ce qui en est réellement de l'avancé des recherches en IA en 2020. Nous arriverons ainsi à mieux comprendre les différents enjeux sociétaux liés à l'IA, qui impacteront grandement l'évolution de ce domaine dans les années à venir.
-
-
-## Etat de l'art de l'Intelligence Artificielle
-
-
-### Naissance de l'IA
+## Naissance de l'IA
 
 
 L’intelligence artificielle est une discipline scientifique qui a vu officiellement le jour en 1956, au Dartmouth College, à Hanovre, aux États-Unis, lors d’une école d’été organisée par quatre chercheurs américains : John McCarthy, Marvin Minsky, Nathaniel Rochester et Claude Shannon. 
@@ -27,7 +22,7 @@ Pour John McCarthy et Marvin Minsky, comme pour les autres promoteurs de l’éc
 Plus précisément, cette discipline scientifique reposait sur la conjecture selon laquelle toutes les fonctions cognitives, en particulier l’apprentissage, le raisonnement, le calcul, la perception, la mémorisation, voire même la découverte scientifique ou la créativité artistique, peuvent être décrites, avec une précision telle qu’il serait possible de programmer un ordinateur pour les reproduire [3].
 
 
-### Historique
+## Historique
 
 
 Au cours de son existence, l’intelligence artificielle a connu de nombreuses évolutions. On peut les résumer en six grandes étapes [3].
