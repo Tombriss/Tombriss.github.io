@@ -4,7 +4,7 @@
 
 # Introduction
 
-En France, près de 1,7 million de personnes sont atteintes d’un trouble de la vision. [https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle]
+Selon l'OMS, 253 millions de personnes présentent une déficience visuelle, 36 millions d’entre elles étant aveugles. En France, ce sont près de 1,7 million de personnes sont atteintes d’un trouble de la vision [1]. Ces personnes sont quotidiennement confrontées à des difficultés pour s'adapter à un environnement très visuel. Pour beaucoup d'entre eux, il est compliqué d'être autonome et des situations du quotidien peuvent alors devenir de réels défis : se déplacer, faire ses courses, faire du sport, faire la cuisine, trouver et consulter du contenu sur internet, retrouver des objets perdus et autour de soi, et bien d'autres. Par ailleurs, le développement des algorithmes d'apprentissage automatique depuis les années 80 combiné à l'explosion de la puissance de calcul des ordinateurs a permis un récent essor dans le domaine dit de "l'Intelligence Artificielle". Ces progrès conceptuels et technologiques donnent l'espoir d'offrir, d'ici quelques années, plus d'autonomie aux personnes atteintes d'un handicap visuel.
 
 
 # Etat de l'art de l'Intelligence Artificielle
@@ -44,3 +44,6 @@ Au cours de son existence, l’intelligence artificielle a connu de nombreuses �
 
 
 6. _Rennaissance de l'IA_. Depuis 2010, la puissance des machines permet d’exploiter des données de masse (big data) avec des techniques d’apprentissage profond (deep learning), qui se fondent sur le recours à des réseaux de neurones formels. Des applications très fructueuses dans de nombreux domaines très en vogue (reconnaissance de la parole, des images, compréhension du langage naturel, voiture autonome, etc.) conduisent à parler d’une renaissance de l’intelligence artificielle.
+
+
+[1] https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle
