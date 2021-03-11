@@ -35,19 +35,37 @@ Lorsqu'on possède un handicap visuel, on est confronté à plusieurs problèmat
 
 ## Speech Recognition
 
+La reconnaissance vocale (Speech Recognition) consiste à transcrire une voix en texte. Plusieurs solutions existent pour relever ce défis. Une architecture de solution qui fonctionne bien est décrite ci-dessous [http://slazebni.cs.illinois.edu/spring17/lec26_audio.pdf]
+
 ![speech_reco](ressources/speech_reco.PNG)
+
+Le traitement du signal vocal passe d'abord dans un feature extractor. L'extraction de features est un processus déterministe qui permet de réduire le flux d'informations tout en conservant les éléments utiles, en utilisant notamment le domaine fréquentiel, en supprimant le bruit et les autres informations non pertinentes. L'extraction se fait dans des fenêtres d'environ 25 ms se décalant de 10 ms. Notre signal sonore se résume alors à une série de "frames". Le Frame Classifier trie alors ces frames en leur associant une classe selon un modèle de mixtures gaussiennes. Le Sequence Model, basé sur des chaines de Markov cachées, donne un sens à cette suite de frames classées en leur associant une suite de phonèmes. Le Lexicon Model qui suit associe une suite de phonème à un mot. Selon la prononciation, plusieurs suites de phonèmes peuvent être associés à un même mot selon une certaine distribution de probabilité. On obtient alors une suite de mots, à laquelle le Language Model peut alors donner un cohérence en formant une phrase.
+
+Cette architecture fonctionne assez bien, et plus généralement c'est une tâche dont les solutions sont plutôt abouties. On peut par exemple tester l'une d'entre elles sur nos téléphones avec les options de dictée de texte. C'est un problème plutôt résolu, donc il ne sera pas vraiment l'objet principale de notre veille.
 
 ## Computer Vision
 
 ### Introduction
 
-![CNN](ressources/CNN.jpeg)
+La Computer Vision est un domaine de l'intelligence artificielle qui consiste à mettre en place des mécanismes d'analyse d'image automatiques qu'on associe en générale à la vision humaine. C'est un domaine de recherche très actif qui se décompose en de nombreux sous-domaines : Image Classification, Object Detection, Image Segmentation, Optical Character Recognition (OCR), Image Captioning, Object Tracking et d'autres encore, notamment celles liées au traitement de videos.
 
-![conv_filters](ressources/conv_filters.PNG)
+L'arrivée des réseaux de neurones a révolutionné la Computer Vision, et notamment les réseaux à convolution développés dans les années 90 par le français Yann Le Cun. En 2012, cette technologie permet à l'université de Toronto de surpasser de très loin ses concurrents au Large Scale Visual Recognition Challenge. Depuis, les modèles de Computer Vision à l'état de l'art sont tous basés sur les réseaux de convolution.
+
+Dans le paradigme de cette discipline, on représente les images par des matrices de pixels. La photo ci-dessous est en noir est blanc, et la matrice contient la valeur de l'intensité (blancheur) de chaque pixel (les valeurs ci-dessous ont été disposées aléatoirement). Lorsqu'on a affaire, à des images en couleur, il faut alors ajouter deux dimension pour avoir les intensités des trois composantes des pixels : R, G, B. 
+
+![photo_matrix](ressources/photo_matrix.PNG)
+
+Une convolution consiste à appliquer une opération comme l'explique le schéma suivant. C'est une opération entre une matrice (l'image) et un noyau de convolution (une matrice de plus petite taille)
 
 ![convolution](ressources/convolution.PNG)
 
-![photo_matrix](ressources/photo_matrix.PNG)
+Selon les valeurs des poids dans le noyau, le résultat de la convolution est différent. Celle-ci agit comme un filtre permettant d'exagérer certains traits, en atténuer d'autres, et plus généralement sélectionner des motifs récurrents.
+
+![conv_filters](ressources/conv_filters.PNG)
+
+Lorsque des convolutions sont placées en entrée d'un réseau de neurones (et lorsque des couches de convolutions sont même superposées), leurs poids sont des paramètres qui peuvent être appris au cours de l'entraînement. Le mécanisme d'apprentissage permet alors de sélectionner des convolutions qui filtrent l'image pour en extraire les features pertinent pour la tâche donnée. 
+
+![CNN](ressources/CNN.jpeg)
 
 ### Récentes avancées
 
