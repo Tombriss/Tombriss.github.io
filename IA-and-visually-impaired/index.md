@@ -25,6 +25,8 @@ En 2020, les systèmes de traitement du langage naturel (NLP) tel que GPT-3 (de 
 
 Il est important de noter que cette veille technologique s'intéresse aux récentes innovations dans certains domaines de l'intelligence artificielle qui pourraient potentiellement améliorer les outils pour déficients visuels existants ou mener à de nouvelles solutions concrètes dans ce domaine, mais aussi aux solutions déjà existantes, en passant par celles encore à l'état de prototype.
 
+![schema](ressources/schema_proto.PNG)
+
 # Etat de l'Art de l'IA en tant qu'outils pour déficients visuels
 
 ## Les domaines d'intérêt
@@ -33,8 +35,114 @@ Lorsqu'on possède un handicap visuel, on est confronté à plusieurs problèmat
 
 ## Speech Recognition
 
-En 
+![speech_reco](ressources/speech_reco.PNG)
+
+## Computer Vision
+
+### Introduction
+
+![CNN](ressources/CNN.jpeg)
+
+![conv_filters](ressources/conv_filters.PNG)
+
+![convolution](ressources/convolution.PNG)
+
+![photo_matrix](ressources/photo_matrix.PNG)
+
+### Récentes avancées
+
+![image_captionning](ressources/image_captionning.PNG)
+
+![segmentation](ressources/segmentation.PNG)
+
+![3D_room](ressources/3D_room.PNG)
+
+### Nouvelles technologies
+
+![lidar](ressources/lidar.PNG)
+
+![yolo_perf](ressources/yolo_perf.PNG)
+
+## Solutions 
+
+### Lunettes
+
+### Guides
+
+### App
+
+### En résumé
+
+![summary](ressources/summary.PNG)
 
 
-[1] https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle
-[2] https://en.wikipedia.org/wiki/Artificial_intelligence
+[1]https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle
+[2]https://en.wikipedia.org/wiki/Artificial_intelligence
+
+[paragraph image captioning] (juin 2019) : https://paperswithcode.com/paper/context-aware-visual-policy-network-for-fine
+
+
+nov 2018 : Intention Oriented Image Captions with Guiding Objects
+--> Conditionnal guiding object for image captioning
+
+2016 : Areas of Attention for Image Captioning
+--> attention model for image captioning
+
+2017 : Image Captioning with Object Detection and Localization
+--> 2 models : one object detection and one spatial relationships
+
+July 2017 : VISUAL RELATIONSHIP DETECTION WITH OBJECT SPATIAL DISTRIBUTION
+--> object detection and then spatial relationships for pair of objects using language model
+
+
+Multi object tracking (suivre un objet alors qu'il se déplace sur l'écran)
+
+
+avril 2020 : FairMOT (On the Fairness of Detection and Re-Identification in Multiple Object Tracking)
+--> 1 model for reId and tracking
+
+2020 : Towards Real-Time Multi-Object Tracking
+--> realtime
+
+
+Method for reconstructing 3D scenes from 2D images
+
+2015 : 3D indoor scene modeling from RGB-D data: a survey
+
+2020 : Shallow2Deep: Indoor scene modeling by single image understanding
+(regarder les papiers cités)
+
+
+
+
+
+[Assistance visuelle via lunettes : plusieurs entreprises dans la course](https://www.lepoint.fr/high-tech-internet/ces-lunettes-qui-rendent-presque-la-vue-aux-aveugles-03-10-2018-2259998_47.php)
+
+[assistance vocale RealThing AI : start up d'assistance vocale gagne $1M](https://prwire.com.au/pr/94721/investment-in-artificial-intelligence-positions-australia-as-a-global-leader-in-accessibility-technology)
+
+[Google teste un système basé sur l'IA pour aider les personnes aveugles à faire leur footing](https://siecledigital.fr/2020/11/24/google-project-guideline-malvoyants/?utm_source=Newsletter+Si%C3%A8cle+Digital&utm_campaign=d87b69130d-newsletter_hebdomadaire&utm_medium=email&utm_term=0_3b73bad11a-d87b69130d-259635475)
+
+[AI Suitcase Holds Hope for the Blind](https://www3.nhk.or.jp/nhkworld/en/news/videos/20210216195624206/)
+
+[Microsoft dévoile une IA capable de décrire des images "aussi bien que les gens le font"](https://siecledigital.fr/2020/10/16/microsoft-presente-une-nouvelle-ia-capable-de-decrire-des-images-aussi-bien-que-les-gens-le-font/)
+
+[Un traitement pour un certain type de cécité trouvé grâce à l'IA](https://www.cbc.ca/news/canada/nova-scotia/machine-learning-medical-research-1.5902643)
+
+[Harvard Research : Bayesian Neural Network for probabilistic segmentation](https://www.seas.harvard.edu/news/2021/02/giving-ai-try)
+
+[accessiBe : l'accessibilité d'internet](http://www.itnewsonline.com/news/accessiBe-Welcomes-Michael-Hingson-as-Chief-Vision-Officer/2979)
+
+[Alana : la start up s'unie avec le RNIB (Royal National Institute of Blind People)](https://www.insider.co.uk/news/ai-spin-out-partners-charity-23423104)
+
+[Lumen : des lunettes pour aider les aveugles](https://www.eu-startups.com/2021/02/10-promising-romanian-startups-to-watch-in-2021/)
+
+[Envision Smart Glasses](https://www.forbes.com/sites/gusalexiou/2021/01/28/envision-ai-glasses--a-game-changer-in-helping-blind-people-master-their-environment/?sh=31e3f8d8b85e)
+
+[Le chien robot de Koda](https://www.tomsguide.fr/intelligence-artificielle-le-chien-robot-de-koda-ressent-les-emotions-humaines/)
+
+[Facebook améliore son IA de description d'images destinée aux utilisateurs malvoyants](https://siecledigital.fr/2021/01/25/facebook-ia-description-images/)
+
+[Yelenkoura Torche : un guide en extérieur](https://www.maliweb.net/societe/yelenkoura-torche-une-innovation-au-service-social-2912662.html)
+
+[GoodMaps : l'application qui guide les malvoyants en intérieur et en extérieur](https://www.journaldemontreal.com/2021/01/18/grande-foire-ces-2021-revue-des-meilleurs-produits-selon-les-medias)
+
