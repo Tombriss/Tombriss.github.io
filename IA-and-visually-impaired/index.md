@@ -8,7 +8,7 @@
 
 ## Des besoins et des solutions
 
-Selon l'OMS, 253 millions de personnes présentent une déficience visuelle, 36 millions d’entre elles étant aveugles. En France, ce sont près de 1,7 million de personnes sont atteintes d’un trouble de la vision [1]. Ces personnes sont quotidiennement confrontées à des difficultés pour s'adapter à un environnement très visuel. Pour beaucoup d'entre eux, il est compliqué d'être autonome et des situations du quotidien peuvent alors devenir de réels défis : se déplacer, faire ses courses, faire du sport, faire la cuisine, trouver et consulter du contenu sur internet, retrouver des objets perdus et autour de soi, et bien d'autres. Par ailleurs, le développement des algorithmes d'apprentissage automatique depuis la fin du siècle précédent combiné à l'explosion de la puissance de calcul des ordinateurs a permis un récent essor dans le domaine dit de "l'Intelligence Artificielle". Ces progrès conceptuels et technologiques donnent l'espoir d'offrir, dès maitenant ou d'ici quelques années, plus d'autonomie aux personnes atteintes d'un handicap visuel.
+Selon l'OMS, 253 millions de personnes présentent une déficience visuelle, 36 millions d’entre elles étant aveugles. En France, ce sont près de 1,7 million de personnes sont atteintes d’un trouble de la vision ([Aveugles de France](https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle)). Ces personnes sont quotidiennement confrontées à des difficultés pour s'adapter à un environnement très visuel. Pour beaucoup d'entre eux, il est compliqué d'être autonome et des situations du quotidien peuvent alors devenir de réels défis : se déplacer, faire ses courses, faire du sport, faire la cuisine, trouver et consulter du contenu sur internet, retrouver des objets perdus et autour de soi, et bien d'autres. Par ailleurs, le développement des algorithmes d'apprentissage automatique depuis la fin du siècle précédent combiné à l'explosion de la puissance de calcul des ordinateurs a permis un récent essor dans le domaine dit de "l'Intelligence Artificielle". Ces progrès conceptuels et technologiques donnent l'espoir d'offrir, dès maitenant ou d'ici quelques années, plus d'autonomie aux personnes atteintes d'un handicap visuel.
 
 
 ## Brève histoire de l'Intelligence Artificielle
@@ -19,7 +19,7 @@ Entre 1950 et 1975, le terme d'intelligence artificelle voit le jour et la reche
 
 À la fin des années 1990 et au début du 21e siècle, l'IA a commencé à être utilisée dans de nombreux domaines. En 2011, lors d'un match d'exhibition du jeu Jeopardy, le système de réponse aux questions d'IBM, Watson, a battu les deux plus grands champions. Des ordinateurs plus rapides, des améliorations algorithmiques et l'accès à de grandes quantités de données ont permis des avancées dans l'apprentissage et la perception des machines. Les méthodes d'apprentissage profond (Deep Learning), voient le jour. En mars 2016, AlphaGo a remporté 4 des 5 parties de Go lors d'un match avec le champion Lee Sedol, devenant ainsi le premier système de jeu de Go sur ordinateur à battre un joueur professionnel sans handicap. 
 
-En 2020, les systèmes de traitement du langage naturel (NLP) tel que GPT-3 (de loin le plus grand réseau neuronal artificiel) égalent les performances humaines sur certains points. L'AlphaFold 2 de DeepMind a démontré la capacité à déterminer, en quelques heures plutôt qu'en quelques mois, la structure 3D d'une protéine. La reconnaissance faciale a progressé au point où, dans certaines circonstances, certains systèmes prétendent avoir un taux de précision de 99%. [2]
+En 2020, les systèmes de traitement du langage naturel (NLP) tel que GPT-3 (de loin le plus grand réseau neuronal artificiel) égalent les performances humaines sur certains points. L'AlphaFold 2 de DeepMind a démontré la capacité à déterminer, en quelques heures plutôt qu'en quelques mois, la structure 3D d'une protéine. La reconnaissance faciale a progressé au point où, dans certaines circonstances, certains systèmes prétendent avoir un taux de précision de 99%. ([Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence))
 
 ## Une veille à 3 niveaux
 
@@ -35,7 +35,7 @@ Lorsqu'on possède un handicap visuel, on est confronté à plusieurs problèmat
 
 ## Speech Recognition
 
-La reconnaissance vocale (Speech Recognition) consiste à transcrire une voix en texte. Plusieurs solutions existent pour relever ce défis. Une architecture de solution qui fonctionne bien est décrite ci-dessous [http://slazebni.cs.illinois.edu/spring17/lec26_audio.pdf]
+La reconnaissance vocale (Speech Recognition) consiste à transcrire une voix en texte. Plusieurs solutions existent pour relever ce défis. Une architecture de solution qui fonctionne bien est décrite ci-dessous. ([Speech Recogntion Course](http://slazebni.cs.illinois.edu/spring17/lec26_audio.pdf))
 
 ![speech_reco](ressources/speech_reco.PNG)
 
@@ -135,54 +135,84 @@ On pense aussi aux modèles [YOLO](https://arxiv.org/abs/1506.02640) (You Only L
 
 ## Solutions 
 
+L'objectif est maintenant de présenter les stades qui suivent la recherche fondamentale : les solutions développées pour les déficients visuels. Certaines d'entre elles sont encore à l'état de prototype et d'autres sont déjà commercialisées.
+
 ### Lunettes
+
+Le premier exemple qui vient en tête quand on pense aux solutions développées pour les déficients visuels sont les lunettes connectées. [Plusieurs entreprises sont dans la course](https://www.lepoint.fr/high-tech-internet/ces-lunettes-qui-rendent-presque-la-vue-aux-aveugles-03-10-2018-2259998_47.php) pour développer l'assistance visuelle de demain. OrCam qui développe MyEye 2.0, 
+[Lumen](https://www.eu-startups.com/2021/02/10-promising-romanian-startups-to-watch-in-2021/), Brother, 
+[Envision](https://www.forbes.com/sites/gusalexiou/2021/01/28/envision-ai-glasses--a-game-changer-in-helping-blind-people-master-their-environment/?sh=31e3f8d8b85e). Google travaillerait sur les [Google Glass](https://www.futura-sciences.com/tech/definitions/smartphone-google-glass-15803/) et Microsoft sur ses [HoloLens](https://www.microsoft.com/fr-fr/hololens) pour en faire des outils pour les déficients visuels. Le défi est de taille, car ces lunettes, qui sont en générale encore à l'état de prototype, coutent souvent bien cher (de l'ordre de 3000€) pour des déficients visuels qui n'ont pas nécessairement les moyens.
+
+![lunettes](ressources/lunettes.jpg)
+
+Les fonctionnalités, toutes basées sur de l'intelligence artificielle, se ressemblent beaucoup entre les différentes paires : lecture de textes, reconnaissance de billets, description de scènes, détection de visages sont souvent proposés. Un solution qui est amenée à se développer et gagner en performances, mais qui aura du mal à devenir un produit bon marché.
 
 ### Guides
 
+Beaucoup de systèmes sont développés pour assister les déficients visuels dans leurs déplacements. On peut trouver cette [AI Suitcase](https://www3.nhk.or.jp/nhkworld/en/news/videos/20210216195624206/), une valise connectée développée par une japonaise aveugle qui met l'intelligence artificielle au service du guidage des malvoyants. On retrouve des produits de petites start up, comme la [Yelenkoura Torche](https://www.maliweb.net/societe/yelenkoura-torche-une-innovation-au-service-social-2912662.html) développée par une entreprise malienne, mais aussi le géant google, qui [teste un système basé sur l'IA pour aider les personnes aveugles à faire leur footing](https://siecledigital.fr/2020/11/24/google-project-guideline-malvoyants/?utm_source=Newsletter+Si%C3%A8cle+Digital&utm_campaign=d87b69130d-newsletter_hebdomadaire&utm_medium=email&utm_term=0_3b73bad11a-d87b69130d-259635475). Certaines solutions sont plus exotiques, comme [le chien robot de Koda](https://www.tomsguide.fr/intelligence-artificielle-le-chien-robot-de-koda-ressent-les-emotions-humaines/), un chien guide robotique, encore à l'état de prototype. Enfin, on peut aussi trouver [GoodMaps](https://www.journaldemontreal.com/2021/01/18/grande-foire-ces-2021-revue-des-meilleurs-produits-selon-les-medias), une application qui guide en intérieur et en extérieur, comme le fait Google Maps mais adapté aux mavoyants.
+
+### Accessibilité
+
+D'autres solutions se concentrent sur l'accessibilité : la possiblité pour les déficients visuels d'avoir accès plus facilement à des fonctionnalités et des contenus. On pense immédiatemment au 
+[Voice Over](https://support.apple.com/fr-fr/guide/iphone/iph3e2e415f/ios) des iPhone d'Apple. Grâce à cette fonctionnalité, 70% des smartphones utilisés par des déficients visuels sont des iPhones. Le Voice Over permet de lire les contenus écrits et navigué dans l'interface IOS de façon autonome et efficace une fois que l'habitude est prise. D'autres solutions visent même à développer tout un téléphone dans une optique d'accessibilité : c'est le cas pour le [Olga Phone](https://www.comptoirdessolutions.org/innovation/olga-phone/).  
+
+On peut aussi penser à d'autres solutions rendant plus accessibles les contenus sur internet, comme la start up australienne qui vient de gagner $1M : [RealThing AI](https://prwire.com.au/pr/94721/investment-in-artificial-intelligence-positions-australia-as-a-global-leader-in-accessibility-technology). Elle développe une assitance vocale type Google Home / Alexa, designée spécialement pour le handicapt visuel.
+
+[Evinced](https://www.evinced.com/) tente quant à elle de rendre vos sites internet plus accessibles en vous aidant sur les choix de développement technique (web : html,css) et [accessiBe](http://www.itnewsonline.com/news/accessiBe-Welcomes-Michael-Hingson-as-Chief-Vision-Officer/2979) tente même de rendre tout internet plus accessible en utilisant de l'intelligence artificielle qui comprend la structure des sites rencontrés pour les rendre automatiquement accessibles sur le poste d'un malvoyant.
+
+
 ### App
 
+Les solutions citées jusqu'à présents sont assez souvent chères, fragiles ou pas nécessairement faciles à transporter ou à avoir tout le temps sur soi. C'est pourquoi sont développées de nombreuses applications mobiles : moins couteuses, elles sont cependant souvent moins performantes que les solutions précédentes.
+
+On retrouve [GoodMaps](https://www.journaldemontreal.com/2021/01/18/grande-foire-ces-2021-revue-des-meilleurs-produits-selon-les-medias) évoquée plus haut.
+
+Des applications aux fonctionnalités bien précises :
+
+- [LookTel](http://www.looktel.com/): Une application pour identifier des billets et des pièces.
+
+- [KNFB Reader App](https://apps.apple.com/fr/app/knfb-reader/id849732663): permet de lire n'importe quel texte. 
+
+- [TapTapSee](https://taptapseeapp.com/): Identifie les objets présents sur des photos.
+
+- [Color ID Free](https://www.perkinselearning.org/content/color-id-free-app): permet d'identifier des couleurs autour de soi.
+
+Des applications plus complexes et développées : 
+
+- Be My Eyes, une application qui met en relation des malvoyants avec d'autres personnes voyantes lorsque c'est nécessaire pour que celles-ci les aident dans leur quotidien, va travailler avec ([Alana](https://www.insider.co.uk/news/ai-spin-out-partners-charity-23423104)), une start qui s'est unie avec le RNIB (Royal National Institute of Blind People) pour développer une solution basée sur l'IA et les données de Be My Eyes.
+
+- [Seeing AI](https://www.microsoft.com/fr-fr/ai/seeing-ai) : probablement l'actuelle meilleure application pour les déficients visuels. Développée par Microsoft, elle permet la détection d'objets, de couleur, de luminosité, la lecture de texte, la description de texte (par image captioning) et ses performances sont assez impressionnantes.
+
+
+### Traitement
+
+Cette veille a aussi menée à des types d'informations assez inattendus, mais finalement un peu hors sujet par rapport au cadre défini plus haut. On a par exemple [ce traitement pour un certain type de cécité trouvé grâce à l'IA](https://www.cbc.ca/news/canada/nova-scotia/machine-learning-medical-research-1.5902643). 
+
+
 ### En résumé
+
+Le schéma ci-dessous tente de clusteriser un peu les différents types de solutions qui ont été trouvées lors de cette veille :
 
 ![summary](ressources/summary.PNG)
 
 
-[1]https://aveuglesdefrance.org/quelques-chiffres-sur-la-deficience-visuelle
-[2]https://en.wikipedia.org/wiki/Artificial_intelligence
+# Conclusion 
 
-[paragraph image captioning] (juin 2019) : https://paperswithcode.com/paper/context-aware-visual-policy-network-for-fine
-
+L'intelligence artificielle et plus précisément la computer vision est une immense opportunité les déficients visuels. Des solutions diverses et variées en terme d'objectifs, performances et prix sont développées. Cette veille a aussi permis d'explorer les innovations techniques qui seront peut être à l'origine des solutions concrètes de demain.
 
 
 
 
 
 
-[Assistance visuelle via lunettes : plusieurs entreprises dans la course](https://www.lepoint.fr/high-tech-internet/ces-lunettes-qui-rendent-presque-la-vue-aux-aveugles-03-10-2018-2259998_47.php)
-
-[assistance vocale RealThing AI : start up d'assistance vocale gagne $1M](https://prwire.com.au/pr/94721/investment-in-artificial-intelligence-positions-australia-as-a-global-leader-in-accessibility-technology)
-
-[Google teste un système basé sur l'IA pour aider les personnes aveugles à faire leur footing](https://siecledigital.fr/2020/11/24/google-project-guideline-malvoyants/?utm_source=Newsletter+Si%C3%A8cle+Digital&utm_campaign=d87b69130d-newsletter_hebdomadaire&utm_medium=email&utm_term=0_3b73bad11a-d87b69130d-259635475)
-
-[AI Suitcase Holds Hope for the Blind](https://www3.nhk.or.jp/nhkworld/en/news/videos/20210216195624206/)
-
-
-[Un traitement pour un certain type de cécité trouvé grâce à l'IA](https://www.cbc.ca/news/canada/nova-scotia/machine-learning-medical-research-1.5902643)
 
 
 
-[accessiBe : l'accessibilité d'internet](http://www.itnewsonline.com/news/accessiBe-Welcomes-Michael-Hingson-as-Chief-Vision-Officer/2979)
-
-[Alana : la start up s'unie avec le RNIB (Royal National Institute of Blind People)](https://www.insider.co.uk/news/ai-spin-out-partners-charity-23423104)
-
-[Lumen : des lunettes pour aider les aveugles](https://www.eu-startups.com/2021/02/10-promising-romanian-startups-to-watch-in-2021/)
-
-[Envision Smart Glasses](https://www.forbes.com/sites/gusalexiou/2021/01/28/envision-ai-glasses--a-game-changer-in-helping-blind-people-master-their-environment/?sh=31e3f8d8b85e)
-
-[Le chien robot de Koda](https://www.tomsguide.fr/intelligence-artificielle-le-chien-robot-de-koda-ressent-les-emotions-humaines/)
 
 
 
-[Yelenkoura Torche : un guide en extérieur](https://www.maliweb.net/societe/yelenkoura-torche-une-innovation-au-service-social-2912662.html)
 
-[GoodMaps : l'application qui guide les malvoyants en intérieur et en extérieur](https://www.journaldemontreal.com/2021/01/18/grande-foire-ces-2021-revue-des-meilleurs-produits-selon-les-medias)
+
+
+
 
