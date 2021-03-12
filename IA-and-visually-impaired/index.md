@@ -69,15 +69,67 @@ Lorsque des convolutions sont placées en entrée d'un réseau de neurones (et l
 
 ### Récentes avancées
 
+De très (trop) nombreux papiers scientifiques peuvent trouver un lien avec le sujet. Pour choisir, on s'est placé dans le cadre d'OOrion (voir le tout premier paragraphe de cette page) en choisissant les avancées qui trouvent un lien avec notre application mobile et qui sont donc potentiellement vecteurs d'innovation de notre côté ou chez des concurrents.
+
+
+__Image Captioning__
+
+L'image Captioning est une tâche qui consiste à générer un texte de façon automatique à partir d'une image. C'est une tâche très complexe qui fait appel à de la Computer Vision, mais aussi du NLP. C'est une tâche intéressante car la description de scène pour un déficient visuel lui permet d'avoir une information d'ordre général sur la pièce dans laquelle il se trouve. On peut aussi espérer pouvoir décrire la position d'un objet que chercherait le malvoyant.
+
 ![image_captionning](ressources/image_captionning.PNG)
 
-![segmentation](ressources/segmentation.PNG)
+Du plus récent au plus ancien : 
+
+- 2018 : Intention Oriented Image Captions with Guiding Objects. Ce papier est extrèmement intéressant car il présente une façon de faire de l'image captioning en exigeant une descritption relative à un objet de l'image en particulier. Si un déficient visuel cherche une tasse, la sortie du modèle pourra être quelque chose comme "une tasse est posée sur une table", alors que celle d'un modèle classique sera plutôt "un bureau avec diverses objets posés dessus".
+
+- 2016 : Areas of Attention for Image Captioning. Le papier qui précéde un peu celui de 2018. C'est un modèle d'image captioning qui propose un système d'attention sur des zones précises de l'image.
+
+- 2017 : Image Captioning with Object Detection and Localization. Ce papier présente une architecture basée sur deux modèle. Un d'object detection et un autre de "spatial relationship", qui va, à partir des objets détecté, décrire leur positions relatives. On a donc ici un modèle concentré sur la notion de localisation.
+
+- 2017 : Visual Relationship Detection With Object Spatial Distribution. Un autre modèle, assez similaire au précédent en terme d'objectif et d'architecture : object detection, spatial relationship et un language model qui établit les liens entre paires d'objets.
+
+De façon plus récente et plus aboutie, et en terme d'image captioning pur, on peut surtout mentionner Facebook ( [Facebook améliore son IA de description d'images destinée aux utilisateurs malvoyants](https://siecledigital.fr/2021/01/25/facebook-ia-description-images/) et Microsoft ([Microsoft dévoile une IA capable de décrire des images "aussi bien que les gens le font"](https://siecledigital.fr/2020/10/16/microsoft-presente-une-nouvelle-ia-capable-de-decrire-des-images-aussi-bien-que-les-gens-le-font/)) qui ont tout deux sortis leurs modèles respectifs. Facebook donne un peu plus d'accessibilité aux contenus pour les déficients visuels sur ses plateformes comme son application éponyme ou encore sur Instragram. Microsoft prétend que son modèle "décrit les images aussi bien que les gens" et pourrait quant à lui l'appliquer à son application d'aide aux déficients visuels : [Seeing AI](https://www.microsoft.com/fr-fr/ai/seeing-ai).
+
+
+__Multi Object Tracking__
+
+Le multi object tracking consiste à suivre plusieurs objets qui se déplacent simultanément au cours d'une vidéo. Dans le cadre de l'aide aux déficients visuels, cette tâche peut permettre de les guider vers un objet rechercher. Au cours du déplacement de l'utilisateur, on peut imaginer que l'objet recherché est tracké, ainsi que les obstacles potentiellement identifiés sur la route de l'utilisateur.
+
+![MOT](ressources/mot.jpg)
+
+
+- 2020 : FairMOT (On the Fairness of Detection and Re-Identification in Multiple Object Tracking) : un récent modèle performant de Re-identification (c'est à dire capacité d'identifier à nouveau un objet déjà rencontré) et tracking.
+
+- 2020 : Towards Real-Time Multi-Object Tracking. Un autre modèle qui permet d'être appliqué en temps réel, un prérequis pour le cadre d'utilisation identifié.
+
+
+__2D to 3D Scenes__
+
+Deux des problématiques les plus difficiles liées au guidage d'un utilisateur vers un objet recherché sont l'estimation de distance d'un objet sur une image, et l'identification d'un chemin qui contourne ces obstacles. Une solution envisageable pour résoudre ces problèmes serait de créer un modèle 3D de la scène observée à partir d'une simple photo. Modèle à partir duquel on pourra estimer les distances et le plus court chemin qui contourne les obstacles.
 
 ![3D_room](ressources/3D_room.PNG)
 
+Les deux papiers suivants permettent de comprendre les dernières avancées et les enjeux du domaine :
+
+- 2020 : Shallow2Deep: Indoor scene modeling by single image understanding. Exactement ce qu'on aimerait, mais le modèle semble très lourd.
+
+- 2015 : 3D indoor scene modeling from RGB-D data: a survey. Un résumé de ce qui existe sur le sujet. En général, les performances sont assez moyennes ou exigent des modèles très couteux en terme de puissance et temps de calculs.
+
+
+__Image Segmentation__
+
+L'Image Segmentation consiste à déterminer les contours des différents objets d'une image. Un des problèmes des réseaux de neurones pour ce genre de tâche est la confiance en la prédiction : si on guide un déficient visuel dans la rue, il faut pouvoir quantifier la confiance qu'on a dans notre prédiciton pour ne pas le mener dans une situation dangereuse. La récente publication d'Harvard : [Bayesian Neural Network for probabilistic segmentation](https://www.seas.harvard.edu/news/2021/02/giving-ai-try) présente Segnet, un méthode de segmentation d'image basée sur des réseaux de neurones bayesiens. D'un point de vue conceptuel, ces réseaux de neurones n'échangent plus des scalaires (activations) mais des distributions de probabilité. Lorsqu'on lui donne une nouvelle entrée (ici une image), le réseau donne en sortie une "distribution de probabilité de réponse", qui correspond à la confiance associée à la prédiction. Il permet aussi d'inférer en temps réel. Ce papier a été publié dans l'optique de donner plus d'autonomie aux malvoyants dans leurs déplacements en leur permettant d'éviter les obstacles sur leurs chemin.
+
+![segmentation](ressources/segmentation.PNG)
+
+
 ### Nouvelles technologies
 
+D'autres technologies sont à un stade plus avancé que celui de recherche fondamentale, mais ne constituent pas en tant que telle une solution pour les déficients visuels. On pense notamment à la nouvelle technologie de l'iPhone 12 Pro : le [LiDAR](https://www.cnetfrance.fr/produits/iphone-12-tout-savoir-sur-le-lidar-une-technologie-prometteuse-39911969.htm) qui permet l'estimation d'estimer les distances entre le téléphone et les objets qu'il filme en temps réel. 
+
 ![lidar](ressources/lidar.PNG)
+
+On pense aussi aux modèles [YOLO](https://arxiv.org/abs/1506.02640) (You Only Look Once) qui sont à l'état de l'art des modèles d'Object Detection en temps réel. Ils auraient aussi pu être dans la partie recherche fondamentale, mais ils sont actuellement tellement utilisés en industrie qu'ils sont plus à considérer comme des produits finis, des blocs à placer dans notre pipeline presque tels quels. Yolo v4 et v5 sont récemment sortis, même si la version 5 est un peu [controversée](https://medium.com/swlh/yolov5-controversy-is-yolov5-real-20e048bebb08).
 
 ![yolo_perf](ressources/yolo_perf.PNG)
 
@@ -100,35 +152,6 @@ Lorsque des convolutions sont placées en entrée d'un réseau de neurones (et l
 [paragraph image captioning] (juin 2019) : https://paperswithcode.com/paper/context-aware-visual-policy-network-for-fine
 
 
-nov 2018 : Intention Oriented Image Captions with Guiding Objects
---> Conditionnal guiding object for image captioning
-
-2016 : Areas of Attention for Image Captioning
---> attention model for image captioning
-
-2017 : Image Captioning with Object Detection and Localization
---> 2 models : one object detection and one spatial relationships
-
-July 2017 : VISUAL RELATIONSHIP DETECTION WITH OBJECT SPATIAL DISTRIBUTION
---> object detection and then spatial relationships for pair of objects using language model
-
-
-Multi object tracking (suivre un objet alors qu'il se déplace sur l'écran)
-
-
-avril 2020 : FairMOT (On the Fairness of Detection and Re-Identification in Multiple Object Tracking)
---> 1 model for reId and tracking
-
-2020 : Towards Real-Time Multi-Object Tracking
---> realtime
-
-
-Method for reconstructing 3D scenes from 2D images
-
-2015 : 3D indoor scene modeling from RGB-D data: a survey
-
-2020 : Shallow2Deep: Indoor scene modeling by single image understanding
-(regarder les papiers cités)
 
 
 
@@ -142,11 +165,10 @@ Method for reconstructing 3D scenes from 2D images
 
 [AI Suitcase Holds Hope for the Blind](https://www3.nhk.or.jp/nhkworld/en/news/videos/20210216195624206/)
 
-[Microsoft dévoile une IA capable de décrire des images "aussi bien que les gens le font"](https://siecledigital.fr/2020/10/16/microsoft-presente-une-nouvelle-ia-capable-de-decrire-des-images-aussi-bien-que-les-gens-le-font/)
 
 [Un traitement pour un certain type de cécité trouvé grâce à l'IA](https://www.cbc.ca/news/canada/nova-scotia/machine-learning-medical-research-1.5902643)
 
-[Harvard Research : Bayesian Neural Network for probabilistic segmentation](https://www.seas.harvard.edu/news/2021/02/giving-ai-try)
+
 
 [accessiBe : l'accessibilité d'internet](http://www.itnewsonline.com/news/accessiBe-Welcomes-Michael-Hingson-as-Chief-Vision-Officer/2979)
 
@@ -158,7 +180,7 @@ Method for reconstructing 3D scenes from 2D images
 
 [Le chien robot de Koda](https://www.tomsguide.fr/intelligence-artificielle-le-chien-robot-de-koda-ressent-les-emotions-humaines/)
 
-[Facebook améliore son IA de description d'images destinée aux utilisateurs malvoyants](https://siecledigital.fr/2021/01/25/facebook-ia-description-images/)
+
 
 [Yelenkoura Torche : un guide en extérieur](https://www.maliweb.net/societe/yelenkoura-torche-une-innovation-au-service-social-2912662.html)
 
